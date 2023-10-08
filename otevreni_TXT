@@ -1,0 +1,4 @@
+with open('furier.txt', encoding='utf-8') as soubor:
+    obsah = soubor.read()
+xx=obsah[0]
+print(xx)
