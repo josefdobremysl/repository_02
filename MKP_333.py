@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-meshfile = 'obdelnik.msh' #KRUH_15.msh'
+meshfile = 'model_3.msh' #KRUH_15.msh'
 mesh = impG.GMSH_READER()        # create a object 'mesh'
 mesh.readMesh(meshfile)  
 

@@ -2,21 +2,16 @@ import dirichletovaop_333 as dop
 import somerfieldop_13_02_1 as som
 import pravastrana_333 as prst
 import numpy as np
+import matice_tuhosti_333 as mattuh
+
 from scipy.sparse.linalg import spsolve
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from mpl_toolkits.mplot3d import *
-import numpy as np
 import pickle
-import matice_tuhosti_333 as mattuh
 from scipy.linalg import lu_factor, lu_solve, solve
-
-from matplotlib import pyplot as plt
-import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 print('numpy: '+np.version.full_version)
-import matplotlib.pyplot as plt
-
 import matplotlib.animation as animation
 import matplotlib
 print('matplotlib: '+matplotlib.__version__)
@@ -108,11 +103,11 @@ def CD(M0,K0,b0,mesh):
         y_n = y_n1
         dy_n = dy_n1
         ddy_n = ddy_n1
-        bod1[k] = y_n[1326,0]
-        bod2[k] = y_n[1470,0]
+        bod1[k] = y_n[136,0]
+        bod2[k] = y_n[170,0]
         bod3[k] = y_n[242,0]
         bod4[k] = y_n[823,0]
-        bod5[k] = y_n[1166,0]
+        bod5[k] = y_n[166,0]
         bod6[k] = y_n[80,0]
        
         zarray[:,k] = y_n[:,0]*1000
